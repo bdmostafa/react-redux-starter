@@ -1,0 +1,15 @@
+#app {
+    font: 16px;
+    color: aqua;
+    min-width: 450px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+a.active {
+    color: burlywood;
+}
+
+nav {
+    padding-top: 15px;
+}
