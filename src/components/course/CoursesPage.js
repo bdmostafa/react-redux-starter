@@ -7,25 +7,25 @@ class CoursesPage extends React.Component {
     constructor(props, context) {
         super(props, context);
 
-        this.state = {
-            course: { title: "" }
-        };
+        // this.state = {
+        //     course: { title: "" }
+        // };
 
-        this.handleTitleChange = this.handleTitleChange.bind(this);
-        this.handleSave = this.handleSave.bind(this);
+        // this.handleTitleChange = this.handleTitleChange.bind(this);
+        // this.handleSave = this.handleSave.bind(this);
     }
 
-    handleTitleChange(e) {
-        const course = this.state.course;
-        course.title = e.target.value;
-        this.setState({ course: course });
-    }
+    // handleTitleChange(e) {
+    //     const course = this.state.course;
+    //     course.title = e.target.value;
+    //     this.setState({ course: course });
+    // }
 
-    handleSave() {
-        // alert(`You are saving ${this.state.course.title}`);
-        // this.props.dispatch(courseActions.createCourse(this.state.course));
-        this.props.actions.createCourse(this.state.course)
-    }
+    // handleSave() {
+    //     // alert(`You are saving ${this.state.course.title}`);
+    //     // this.props.dispatch(courseActions.createCourse(this.state.course));
+    //     this.props.actions.createCourse(this.state.course)
+    // }
 
     courseRow(course, idx) {
         return <div key={idx} > {course.title} </div>;
@@ -36,7 +36,7 @@ class CoursesPage extends React.Component {
             <div>
                 <h1>Courses Page</h1>
                 {this.props.courses.map(this.courseRow)}
-                <h2>Add courses</h2>
+                {/* <h2>Add courses</h2>
                 <input
                     type="text"
                     onChange={this.handleTitleChange}
@@ -46,7 +46,7 @@ class CoursesPage extends React.Component {
                     type="submit"
                     value="Save"
                     onClick={this.handleSave}
-                />
+                /> */}
             </div>
         );
     }
